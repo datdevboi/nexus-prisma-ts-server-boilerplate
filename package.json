@@ -10,6 +10,11 @@
     "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src/index.ts"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.16.1",
+    "@types/graphql": "^14.0.7",
+    "@types/jsonwebtoken": "^8.3.0",
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "^3.3.3333"
   },
