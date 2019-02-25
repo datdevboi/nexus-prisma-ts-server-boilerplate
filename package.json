@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "prisma:deploy": "prisma deploy",
-    "prisma:start": "prisma init --endpoint http://localhost:4466",
-    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src/index.ts"
+    "start": "nodemon --exec ts-node ./src/index.ts"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -27,6 +26,8 @@
     "jsonwebtoken": "^8.5.0",
     "nexus": "^0.10.0",
     "nexus-prisma": "^0.3.3",
-    "prisma-client-lib": "^1.27.1"
+    "nodemon": "^1.18.10",
+    "prisma-client-lib": "^1.27.1",
+    "ts-node": "^8.0.2"
   }
 }
