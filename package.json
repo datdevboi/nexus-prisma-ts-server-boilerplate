@@ -1,0 +1,22 @@
+{
+  "name": "nexus-prisma-ts-server-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Camilo Guerrero",
+  "license": "MIT",
+  "scripts": {
+    "prisma:deploy": "prisma deploy",
+    "prisma:start": "prisma init --endpoint http://localhost:4466",
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "graphql": "^14.1.1",
+    "nexus": "^0.10.0",
+    "nexus-prisma": "^0.3.3",
+    "prisma-client-lib": "^1.27.1"
+  }
+}
