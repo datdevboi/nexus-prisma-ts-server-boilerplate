@@ -347,7 +347,7 @@ export default {
             "deprecationReason": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "args": [],
             "type": {
@@ -687,7 +687,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -697,7 +697,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_not",
+            "name": "password_not",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -707,7 +707,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_in",
+            "name": "password_in",
             "description": null,
             "type": {
               "kind": "LIST",
@@ -725,7 +725,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_not_in",
+            "name": "password_not_in",
             "description": null,
             "type": {
               "kind": "LIST",
@@ -743,7 +743,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_lt",
+            "name": "password_lt",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -753,7 +753,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_lte",
+            "name": "password_lte",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -763,7 +763,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_gt",
+            "name": "password_gt",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -773,7 +773,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_gte",
+            "name": "password_gte",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -783,7 +783,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_contains",
+            "name": "password_contains",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -793,7 +793,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_not_contains",
+            "name": "password_not_contains",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -803,7 +803,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_starts_with",
+            "name": "password_starts_with",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -813,7 +813,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_not_starts_with",
+            "name": "password_not_starts_with",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -823,7 +823,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_ends_with",
+            "name": "password_ends_with",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -833,7 +833,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name_not_ends_with",
+            "name": "password_not_ends_with",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -934,13 +934,13 @@ export default {
             "deprecationReason": null
           },
           {
-            "name": "name_ASC",
+            "name": "password_ASC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "name_DESC",
+            "name": "password_DESC",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -1477,7 +1477,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "type": {
               "kind": "NON_NULL",
@@ -1512,7 +1512,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -1543,7 +1543,7 @@ export default {
             "defaultValue": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -1905,7 +1905,7 @@ export default {
             "deprecationReason": null
           },
           {
-            "name": "name",
+            "name": "password",
             "description": null,
             "args": [],
             "type": {
