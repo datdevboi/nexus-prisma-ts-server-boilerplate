@@ -1,4 +1,5 @@
 import { prismaObjectType } from "nexus-prisma";
+import { mutationType, queryType, stringArg } from "nexus/dist";
 
 export const User = prismaObjectType({
   name: "User",
@@ -8,32 +9,37 @@ export const User = prismaObjectType({
   }
 });
 
-export const Mutation = prismaObjectType({
-  name: "Mutation",
+export const UserMutations = mutationType({
   definition(t) {
-    t.prismaFields(["*"]);
-    // t.field("register", {
-    //   type: "String",
-    //   args: {
-    //     email: stringArg(),
-    //     password: stringArg()
-    //   },
-    //   resolve: (parent, args, ctx) => {
-    //     return "register";
-    //   }
-    // });
+    t.field("register", {
+      type: User,
+      args: {
+        email: stringArg({ required: true }),
+        password: stringArg({ required: true })
+      },
+      resolve(root, { email, password }, context, info) {
+        return context.prisma.createUser({
+          email,
+          password
+        });
+      }
+    });
   }
 });
 
-export const Query = prismaObjectType({
-  name: "Query",
+export const UserQuery = queryType({
   definition(t) {
-    t.prismaFields(["*"]);
-    // t.field("me", {
-    //   type: "String",
-    //   resolve: () => {
-    //     return "hi";
-    //   }
-    // });
+    t.field("login", {
+      type: User,
+      args: {
+        email: stringArg({ required: true }),
+        password: stringArg({ required: true })
+      },
+      resolve(parent, { email, password }, ctx) {
+        return ctx.prisma.user({
+          email
+        });
+      }
+    });
   }
 });
