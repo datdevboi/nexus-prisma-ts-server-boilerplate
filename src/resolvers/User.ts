@@ -1,5 +1,5 @@
 import { prismaObjectType } from "nexus-prisma";
-import { mutationType, queryType, stringArg } from "nexus/dist";
+import { extendType, queryType, stringArg } from "nexus/dist";
 
 export const User = prismaObjectType({
   name: "User",
@@ -9,7 +9,8 @@ export const User = prismaObjectType({
   }
 });
 
-export const UserMutations = mutationType({
+export const UserMutations = extendType({
+  type: "Mutation",
   definition(t) {
     t.field("register", {
       type: User,
