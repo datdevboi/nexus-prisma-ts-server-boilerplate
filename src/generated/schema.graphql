@@ -3,11 +3,19 @@
 
 
 type Mutation {
+  addPost(content: String!, title: String!): Post!
   register(email: String!, password: String!): User!
 }
 
 interface Node {
   id: ID!
+}
+
+type Post implements Node {
+  content: String!
+  id: ID!
+  published: Boolean!
+  title: String!
 }
 
 type Query {
